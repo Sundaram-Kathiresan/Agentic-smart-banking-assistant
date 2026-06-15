@@ -2,7 +2,7 @@ from pydantic import BaseModel, Field
 from typing import List, Dict, Any, Optional
 
 class QueryRequest(BaseModel):
-   query : str = Field(..., example="What is the minimum CIBIL score for personal loans?")
+   query : str = Field(..., example="What's the minimum CIBIL score for personal loans?")
 
 class QueryResponse(BaseModel):
    query : str
